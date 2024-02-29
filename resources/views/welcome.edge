@@ -1,0 +1,14 @@
+@layout('layouts/base')
+
+@section('content')
+    <h1>AdonisJS Test</h1>
+    <div class="articles-wrapper">
+      <p>List of articles available:</p>
+      <a class="btn" href="/article/create">Create an article</a>
+    </div>
+    <ul>
+    @each (article in articles)
+      <li><a href="/article/{{article.id}}">{{article.title}}</a></li>
+    @end
+    </ul>
+@end

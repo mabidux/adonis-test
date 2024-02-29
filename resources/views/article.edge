@@ -1,0 +1,10 @@
+@layout('layouts/base')
+
+@section('content')
+<h1>{{article.title}}</h1>
+<h3>Written by {{article.author}} at {{article.createdAt}}</h3>
+
+<p>{{article.content}}</p>
+
+<a href="{{route('home')}}">Voltar</a>
+@end
